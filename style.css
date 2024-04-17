@@ -371,6 +371,7 @@ body {
     z-index: 2;
     font-size: 30px;
     font-weight: 500;
+    font-family: cursive;
     color: black;
     padding-bottom: 20px;
 }
@@ -379,8 +380,8 @@ body {
     z-index: 2;
     text-align: center;
     font-size: 15px;
-    font-style: italic;
     color: grey;
+    font-family: cursive;
     letter-spacing: 1px;
     line-height: 2;
     padding-right: 24%;
@@ -544,10 +545,8 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 45px;
-
     color: black;
     padding: 10px;
-    padding-bottom: 30px;
     padding-top: 60px;
     font-weight: 900;
 }
@@ -619,6 +618,7 @@ body {
 
 .cv {
     padding: 40px;
+    padding-top: 20px;
 }
 
 .cv button {
@@ -705,6 +705,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 0;
 }
 
 .colors {
@@ -749,7 +750,7 @@ body {
     border: 0px solid #FF5733;
     background: #FF5733;
     box-shadow: 0px 0px 0px 0px #FF5733;
-    height: 100px;
+    height: 50px;
     transition: all .8s ease;
 }
 
@@ -769,17 +770,19 @@ body {
 }
 
 .service-description h2 {
-    padding: 10px;
-    margin: 5px;
+    padding: 10px 20px;
     font-weight: 200;
     font-size: 25px;
 }
 
 .service-description p {
-    padding: 10px;
-    font-weight: 200;
-    font-size: 16px;
+    padding: 10px 20px; /* padding: top-and-bottom  left-and-right */
+    font-weight: 100;
+    font-size: 12px;
     opacity: .8;
+    letter-spacing: 0.3;
+    line-height: 2;
+    text-align: justify;
 }
 
 #skills {
@@ -820,7 +823,6 @@ body {
     background: #2b3579;
     opacity: 0.3;
 }
-
 
 .skills .icon-box i {
     font-size: 32px;
@@ -884,8 +886,21 @@ body {
     }
 }
 
-
-
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%; /* Adjust this value to change the width of the container */
+    margin: 0 auto; /* Centers the container */
+  }
+  
+  .certifications .image {
+    width: 50%;
+  }
+  
+  .certifications img {
+    width: calc(100% - (20px * 2));
+    margin: 20px;
+  }
 
 
 
@@ -1464,73 +1479,6 @@ button:hover .index {
     transition: all .4s ease;
 }
 
-.cv {
-    padding-top: 40px;
-}
-
-.cv button {
-    background: transparent;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    background: #FF5733;
-    outline: none;
-    font-size: 20px;
-    border-radius: 4px;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
-    transition: all .4s ease;
-}
-
-.cv button:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-#popupresume {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 3%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(45, 45, 45);
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-#popupresume.show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-}
-
-#pdfViewer {
-    width: 70%;
-    height: 100%;
-}
-
-.closeresume {
-    position: absolute;
-    top: 18px;
-    right: 35px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.picks {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-
 .small-container p {
     color: #777;
     font-size: 14px;
@@ -1644,66 +1592,78 @@ select:focus {
     padding-left: 10px;
 }
 
-.gallery-grid div {
+.gallery-grid-1 div {
     width: 25%;
     height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
-.gallery-grid {
+.gallery-grid-1 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.gallery01 {
-    background-image: url(image/gal1.jpg);
-}
+.gallery01 {background-image: url(image/gal1.jpg);}
+.gallery02 {background-image: url(image/gal2.jpg);}
+.gallery03 {background-image: url(image/gal3.jpg);}
+.gallery04 {background-image: url(image/gal4.jpg);}
+.gallery05 {background-image: url(image/gal5.jpg);}
+.gallery06 {background-image: url(image/gal6.jpg);}
+.gallery07 {background-image: url(image/gal7.jpg);}
+.gallery08 {background-image: url(image/gal8.jpg);}
+.gallery09 {background-image: url(image/gal9.jpg);}
+.gallery10 {background-image: url(image/gal10.jpg);}
+.gallery11 {background-image: url(image/gal11.jpg);}
+.gallery12 {background-image: url(image/gal12.jpg);}
 
-.gallery02 {
-    background-image: url(image/gal2.jpg);
-}
 
-.gallery03 {
-    background-image: url(image/gal3.jpg);
-}
 
-.gallery04 {
-    background-image: url(image/gal4.jpg);
+.gallery-grid-2 div {
+    width: 25%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+.gallery-grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery13 {background-image: url(image/gal13.jpg);}
+.gallery14 {background-image: url(image/gal14.jpg);}
+.gallery15 {background-image: url(image/gal15.jpg);}
+.gallery16 {background-image: url(image/gal16.jpg);}
+.gallery17 {background-image: url(image/gal17.jpg);}
+.gallery18 {background-image: url(image/gal18.jpg);}
+.gallery19 {background-image: url(image/gal19.jpg);}
+.gallery20 {background-image: url(image/gal20.jpg);}
+.gallery21 {background-image: url(image/gal21.jpg);}
+.gallery22 {background-image: url(image/gal22.jpg);}
+.gallery23 {background-image: url(image/gal23.jpg);}
+.gallery24 {background-image: url(image/gal24.jpg);}
 
-.gallery05 {
-    background-image: url(image/gal5.jpg);
-}
 
-.gallery06 {
-    background-image: url(image/gal6.jpg);
-}
 
-.gallery07 {
-    background-image: url(image/gal7.jpg);
+.gallery-grid-3 div {
+    width: 25%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-
-.gallery08 {
-    background-image: url(image/gal8.jpg);
+.gallery-grid-3 {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.gallery09 {
-    background-image: url(image/gal9.jpg);
-}
-
-.gallery10 {
-    background-image: url(image/gal10.jpg);
-}
-
-.gallery11 {
-    background-image: url(image/gal11.jpg);
-}
-
-.gallery12 {
-    background-image: url(image/gal12.jpg);
-}
+.gallery25 {background-image: url(image/gal25.jpg);}
+.gallery26 {background-image: url(image/gal26.jpg);}
+.gallery27 {background-image: url(image/gal27.jpg);}
+.gallery28 {background-image: url(image/gal28.jpg);}
+.gallery29 {background-image: url(image/gal29.jpg);}
+.gallery30 {background-image: url(image/gal30.jpg);}
+.gallery31 {background-image: url(image/gal31.jpg);}
+.gallery32 {background-image: url(image/gal32.jpg);}
 
 @media screen and (max-width: 400px) {
     .image-grid {
