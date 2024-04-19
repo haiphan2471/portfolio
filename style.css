@@ -1604,18 +1604,18 @@ select:focus {
     flex-wrap: wrap;
 }
 
-.gallery01 {background-image: url(image/gal1.jpg);}
-.gallery02 {background-image: url(image/gal2.jpg);}
+.gallery01 {background-image: url(image/gal1.JPG);}
+.gallery02 {background-image: url(image/gal2.JPG);}
 .gallery03 {background-image: url(image/gal3.jpg);}
-.gallery04 {background-image: url(image/gal4.jpg);}
+.gallery04 {background-image: url(image/gal4.JPG);}
 .gallery05 {background-image: url(image/gal5.jpg);}
 .gallery06 {background-image: url(image/gal6.jpg);}
 .gallery07 {background-image: url(image/gal7.jpg);}
-.gallery08 {background-image: url(image/gal8.jpg);}
+.gallery08 {background-image: url(image/gal8.JPG);}
 .gallery09 {background-image: url(image/gal9.jpg);}
-.gallery10 {background-image: url(image/gal10.jpg);}
-.gallery11 {background-image: url(image/gal11.jpg);}
-.gallery12 {background-image: url(image/gal12.jpg);}
+.gallery10 {background-image: url(image/gal10.JPG);}
+.gallery11 {background-image: url(image/gal11.JPG);}
+.gallery12 {background-image: url(image/gal12.JPG);}
 
 
 
@@ -1630,7 +1630,7 @@ select:focus {
     display: flex;
     flex-wrap: wrap;
 }
-.gallery13 {background-image: url(image/gal13.jpg);}
+.gallery13 {background-image: url(image/gal13.JPG);}
 .gallery14 {background-image: url(image/gal14.jpg);}
 .gallery15 {background-image: url(image/gal15.jpg);}
 .gallery16 {background-image: url(image/gal16.jpg);}
